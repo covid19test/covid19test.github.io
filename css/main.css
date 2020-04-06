@@ -1,0 +1,247 @@
+/* navbar style */
+body * {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+.navbar-default {
+  background-color: #24be55;
+  border-color: #43d471;
+}
+
+.navbar-default .navbar-brand {
+  color: #f0f0f0;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #ddd;
+  background-color: transparent;
+}
+.navbar-default .row {
+  padding: 15px 15px 8px;
+}
+.navbar-brand {
+  float: left;
+  height: auto;
+  padding: 0px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.navbar-default .row p {
+  padding: 0px;
+  font-size: 16px;
+  color: #f0f0f0;
+  text-align: right;
+  margin: 0;
+}
+
+/* Start with the main  */
+
+.main {
+  margin-top: 30px;
+}
+
+.main .main-header {
+  margin-bottom: 20px;
+}
+.main .main-header h1 {
+  color: #24be55;
+}
+
+.main .main-header h1 .fa {
+  margin-left: 10px;
+  font-size: 50px;
+}
+
+.main .section {
+  margin-bottom: 50px;
+}
+
+.main .section .figures figcaption {
+  font-size: 25px;
+  color: #24be55;
+}
+.main .section .figures .fever figcaption {
+  margin-left: 10px;
+}
+.main .section p {
+  color: #3e3f41;
+}
+.main .section .text-figures p {
+  margin-top: 20px;
+}
+.main .main-footer {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.main .main-footer button {
+  margin: auto;
+  padding: 15px;
+  font-size: 30px;
+  width: 290px;
+  background-color: #24be55;
+}
+
+/* Quiz Modal start */
+
+#quizModal .close {
+  float: left;
+}
+#quizModal .modal-footer .carousel-control {
+  position: relative;
+  opacity: 1;
+}
+#quizModal .modal-footer a {
+  width: auto;
+  font-size: 15px;
+  background-image: none;
+  width: 75px;
+}
+#quizModal .modal-footer a#next {
+  background-color: #24be55;
+}
+
+#quizModal .modal-footer a#prev {
+  background-color: #e53838;
+}
+#quizModal .modal-footer a:hover,
+#quizModal .modal-footer a:focus {
+  color: #f0f0f0;
+  outline: none;
+}
+#quizModal .modal-footer a:active {
+  opacity: 0.8;
+}
+#quizModal .modal-footer .quizNumeration {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* item design start */
+
+#quizModal #quizSlider .item .quiz-title h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #24be55;
+}
+
+#quizModal #quizSlider .item .quiz-question p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+#quizModal #quizSlider .item .quiz-question p.tips {
+  font-size: 18px;
+  margin: 0;
+}
+
+#quizModal #quizSlider .item .sub-quiz-question p {
+  margin-top: 10px;
+}
+
+#quizModal #quizSlider .item .quiz-answer label {
+  font-size: 18px;
+  position: absolute;
+  top: 5px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+#quizModal #quizSlider .item .quiz-answer label#forInputText {
+  position: relative;
+}
+
+#quizModal #quizSlider .item .quiz-answer input[type="text"] {
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#quizModal #quizSlider .item .quiz-answer .answer {
+  margin-top: 5px;
+  position: relative;
+}
+
+#quizModal #quizSlider .item .quiz-answer input[type="radio"],
+#quizModal #quizSlider .item .quiz-answer input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#quizModal #quizSlider .item .subshow {
+  margin-right: 4%;
+  border-right: 3px solid #24be55;
+  background: rgba(36, 190, 85, 0.13);
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+
+#quizModal #quizSlider .item .subInfoDisplay {
+  display: none;
+  width: 90%;
+  margin: auto;
+}
+
+#quizModal #quizSlider .item .subInfoDisplay .alert {
+  margin-bottom: 10px;
+}
+#quizModal #quizSlider .item .subshow .quiz-question p {
+  font-size: 18px;
+}
+
+#quizModal #quizSlider .item .subshow .quiz-answer label {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#quizModal #quizSlider .item .subshow .quiz-answer input[type="radio"],
+#quizModal #quizSlider .item .subshow .quiz-answer input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* result item */
+
+.lastItem .result button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.lastItem #result-display .alert {
+  margin-bottom: 20px;
+  font-size: 28px;
+  display: none;
+}
+.lastItem #result-display .alert p {
+  font-size: 20px;
+}
+.lastItem #result-display .alert p span {
+  font-weight: bold;
+  font-size: 28px;
+}
+/* Footer start */
+
+.footer footer {
+  border-top: 1px solid #ccc;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.footer footer .sante-gov {
+  padding-left: 0px;
+}
+.footer footer a,
+.footer footer p {
+  color: #656868;
+}
+.footer footer a {
+  text-decoration: none;
+  color: #393b41;
+}
+
+/*  media queries */
