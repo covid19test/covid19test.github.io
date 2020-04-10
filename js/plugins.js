@@ -32,6 +32,15 @@ $(document).ready(function () {
     }
   });
 
+  // On change yes/no clear select inputs
+  $(".subqst input.no").click(function () {
+    $(this)
+      .parent()
+      .siblings(".subshow")
+      .find("input:checked")
+      .prop("checked", false);
+  });
+
   // Show sub info
   $(".subInfo input[type=radio]").click(function () {
     $(this).parent().siblings().children(".subInfoDisplay").hide();
