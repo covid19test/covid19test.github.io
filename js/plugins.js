@@ -33,6 +33,16 @@ $(document).ready(function () {
     }
   });
 
+  // if idk checkbox clicked
+  $(".idk-checkbox input").click(function () {
+    if ($(this).hasClass("idk-input") & $(this).is(":checked")) {
+      $(this).parent().siblings().children("input").prop("checked", false);
+      $(this).parent().siblings().children("input").prop("disabled", true);
+    } else if ($(this).hasClass("idk-input") & !$(this).is(":checked")) {
+      $(this).parent().siblings().children("input").prop("disabled", false);
+    }
+  });
+
   // On change yes/no clear select inputs
   $(".subqst input.no").click(function () {
     $(this)
