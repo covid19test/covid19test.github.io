@@ -4,7 +4,7 @@ $(document).ready(function () {
       direction = e.direction,
       quizNumberInt = parseInt(quizNumber.text());
     if (direction == "left") {
-      if (quizNumberInt < 27) {
+      if (quizNumberInt < 28) {
         quizNumber.text(quizNumberInt + 1);
       }
     } else if (direction == "right") {
@@ -55,16 +55,6 @@ $(document).ready(function () {
       $(this).siblings(".subInfoDisplay").show();
     } else {
       $(this).siblings(".subInfoDisplay").hide();
-    }
-  });
-
-  // if idk checkbox clicked
-  $(".idk-checkbox input").click(function () {
-    if ($(this).hasClass("idk-input") & $(this).is(":checked")) {
-      $(this).parent().siblings().children("input").prop("checked", false);
-      $(this).parent().siblings().children("input").prop("disabled", true);
-    } else if ($(this).hasClass("idk-input") & !$(this).is(":checked")) {
-      $(this).parent().siblings().children("input").prop("disabled", false);
     }
   });
 
@@ -123,8 +113,7 @@ $(document).ready(function () {
 
     let dangerMark = (dangerSum * 100) / 30;
 
-    console.log(probMark);
-    console.log(dangerMark);
+    alert("prob: " + probabilitySum + "\ndanger: " + dangerSum);
     let dangerMarkDisplay = $("#danger-display");
     if (probMark > 25) {
       dangerMarkDisplay.show();
@@ -157,8 +146,23 @@ $(document).ready(function () {
   });
 
   // reset on modal hide
-
   $("#quizModal").on("hide.bs.modal", function (e) {
     $("#reset-quiz-btn").click();
+  });
+
+  // Validate form
+  $("#next").click(function () {
+    let checkedInput = $(".item.active input:checked");
+    if (checkedInput.size() < 1) {
+      return false;
+    } else if (checkedInput.hasClass("yes")) {
+      let checkedNestedInput = checkedInput
+        .parent()
+        .siblings(".subshow")
+        .find("input:checked");
+      if (checkedNestedInput.size() < 1) {
+        return false;
+      }
+    }
   });
 });

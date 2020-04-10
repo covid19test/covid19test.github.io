@@ -924,7 +924,7 @@
                     <div class="quiz-question">
                       <p class="lead">هل لديك أعراض أخرى حاليا ؟</p>
                     </div>
-                    <div class="quiz-answer subInfo idk-checkbox">
+                    <div class="quiz-answer subInfo">
                       <div class="answer">
                         <input
                           type="checkbox"
@@ -1032,13 +1032,12 @@
 					  <div class="answer">
                         <input
 						  type="checkbox"
-						  class="idk-input"
                           name="qst14[]"
                           id="qst14op10"
-                          value="أمراض أخرى"
+                          value="أعراض أخرى"
                           data-probability="0"
                         />
-                        <label for="qst14op10">أمراض أخرى</label>
+                        <label for="qst14op10">أعراض أخرى</label>
                       </div>
                     </div>
                   </div>
@@ -1172,6 +1171,16 @@
                             <label for="qst15yesopt9">
                               التَليّف الكيسي الرئوي (mucoviscidose)</label
                             >
+                          </div>
+                          <div class="answer">
+                            <input
+                              type="checkbox"
+                              name="qst14[]"
+                              id="qst14op10"
+                              value="مرض آخر"
+                              data-danger="0"
+                            />
+                            <label for="qst14op10">مرض آخر</label>
                           </div>
                         </div>
                       </div>
@@ -1532,17 +1541,7 @@
                       <!-- Sub question -->
                       <div class="subshow hide">
                         <div class="quiz-question"></div>
-                        <div class="quiz-answer subInfo">
-                          <div class="answer">
-                            <label id="forInputText" for="qst20yessubinput"
-                              >إذا كانت الإجابة بنعم ، فما اسمها؟</label
-                            >
-                            <input
-                              type="text"
-                              name="qst20yes"
-                              id="qst20yessubinput"
-                            />
-                          </div>
+                        <div class="quiz-answer subInfo">                          
                           <div class="quiz-question sub-quiz-question">
                             <p class="lead">منذ متى؟</p>
                           </div>
@@ -1781,10 +1780,7 @@
                           <div class="alert alert-info" role="alert">
                             لقد أشرت أن معدل التنفس يفوق 22، يجب استشارة الطبيب
                             عاجلا!.
-                          </div>
-                          لدقة أكبر يمكنك كتابة معدل التنفس هنا : (عدد الأنفاس
-                          في الدقيقة)<br />
-                          <input type="text" name="qst25op3sub" />
+                          </div>                          
                         </div>
                       </div>
                       <div class="answer">
