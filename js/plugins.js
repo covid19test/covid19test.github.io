@@ -85,7 +85,7 @@ $(document).ready(function () {
       dangerSum = dangerSum + selectedInputDangerMark;
     }
 
-    let probMark = (probabilitySum * 100) / 94;
+    let probMark = (probabilitySum * 100) / 92;
     let probMarkDisplay = $("#probability-display");
 
     probMarkDisplay.show();
@@ -112,9 +112,8 @@ $(document).ready(function () {
       probMarkDisplay.addClass("alert-danger");
     }
 
-    let dangerMark = (dangerSum * 100) / 30;
+    let dangerMark = (dangerSum * 100) / 23.75;
 
-    alert("prob: " + probabilitySum + "\ndanger: " + dangerSum);
     let dangerMarkDisplay = $("#danger-display");
     if (probMark > 25) {
       dangerMarkDisplay.show();
