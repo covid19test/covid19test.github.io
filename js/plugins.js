@@ -12,6 +12,7 @@ $(document).ready(function () {
         quizNumber.text(quizNumberInt - 1);
       }
     }
+    $("#errors-display").hide();
   });
 
   // disabled button if the last item
@@ -154,6 +155,8 @@ $(document).ready(function () {
   $("#next").click(function () {
     let checkedInput = $(".item.active input:checked");
     if (checkedInput.size() < 1) {
+      $("#errors-display").html("يرجى الإجابة على السؤال.");
+      $("#errors-display").show();
       return false;
     } else if (checkedInput.hasClass("yes")) {
       let checkedNestedInput = checkedInput
@@ -161,6 +164,10 @@ $(document).ready(function () {
         .siblings(".subshow")
         .find("input:checked");
       if (checkedNestedInput.size() < 1) {
+        $("#errors-display").html(
+          "لقد أجبت بنعم، يرجى إكمـال الإجابة على السؤال."
+        );
+        $("#errors-display").show();
         return false;
       }
     }
