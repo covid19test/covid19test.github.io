@@ -924,7 +924,7 @@
                     <div class="quiz-question">
                       <p class="lead">هل لديك أعراض أخرى حاليا ؟</p>
                     </div>
-                    <div class="quiz-answer subInfo">
+                    <div class="quiz-answer subInfo idk-checkbox">
                       <div class="answer">
                         <input
                           type="checkbox"
@@ -1028,6 +1028,17 @@
                             استشارة طبية عاجلة. إتصل بالرقم <u>3030</u>
                           </div>
                         </div>
+					  </div>
+					  <div class="answer">
+                        <input
+						  type="checkbox"
+						  class="idk-input"
+                          name="qst14[]"
+                          id="qst14op10"
+                          value="أمراض أخرى"
+                          data-probability="0"
+                        />
+                        <label for="qst14op10">أمراض أخرى</label>
                       </div>
                     </div>
                   </div>
@@ -1919,6 +1930,16 @@
                           data-danger="0"
                         />
                         <label for="qst27op4">أكثر من 101</label>
+					  </div>
+					  <div class="answer">
+                        <input
+                          type="radio"
+                          name="qst27"
+                          id="qst27op5"
+                          value="لا أدري"
+                          data-danger="0"
+                        />
+                        <label for="qst27op5">لا أدري</label>
                       </div>
                     </div>
                   </div>
